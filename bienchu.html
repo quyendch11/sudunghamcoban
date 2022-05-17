@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let daychu= "I Love You Baby";
+  let chuhoa= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let chuthuong = "abcdefghijklmnopqrstuvwxyz";
+  let ketqua = [];
+  for (let i =0; i< daychu.length;i++){
+      if (chuhoa.indexOf(daychu[i]) !== -1){
+          ketqua.push (daychu[i].toLowerCase ());
+      }
+      else if (chuthuong.indexOf(daychu[i]) !==-1){
+          ketqua.push (daychu[i].toUpperCase());
+      }
+      else{
+          ketqua.push(daychu[i]);
+      }
+  }
+  document.write("dãy chữ ban đầu là " + daychu + "<br>");
+  document.write("dãy chữ sau biến đổi là " + ketqua.join(""));
+</script>
+</body>
+</html>

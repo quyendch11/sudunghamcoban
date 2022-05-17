@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let dayso = prompt("mời nhập một dãy số bất kỳ ");
+  let str = dayso.toString();
+  let ketqua = [str[0]];
+  for (let i =1; i<str.length;i++){
+      if ((str[i-1]%2===0) && (str[i]%2===0)){
+          ketqua.push('-',str[i]);
+      }
+      else{
+          ketqua.push(str[i]);
+      }
+  }
+  document.write(ketqua.join(""));
+</script>
+</body>
+</html>
